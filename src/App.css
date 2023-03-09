@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+
+*,*::before,*::after{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    
+    background-color: aliceblue;
+}
+.store-name{
+    font-family: 'Smokum', cursive;
+    margin: 1rem 1rem;
+    text-decoration: underline;
+}
+
+.heading-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 35px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    height: 1.5rem;
+}
+
+.nav-btn{
+    font-size: 20px;
+    font-weight: bold;
+    width: 5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav-btn:hover{
+    cursor: pointer;
+    border-bottom: 3px black solid;
+}
+
+.photos{
+    width: 200px;
+    height: auto;
+}
+
+.card-container{
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    height: 450px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 5px 5px 12px black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.title,.price{
+    font-weight: bold;
+    margin: 10px;
+}
+
+@media screen and (max-width: 374px) {
+
+    .navBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-btn{
+        margin: 5px 0px 0px 15px;
+    }
+}
