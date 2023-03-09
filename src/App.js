@@ -33,7 +33,7 @@ function App() {
       <div className='card-container'>
         {clothData.map((singleData) => {
           return <div className='card' key={singleData.id}>
-            <img src={singleData.image} className='photos' />
+            <img src={singleData.image} className='photos' alt={singleData.title} />
             <div className='title'>{singleData.title}</div>
             <p>{ singleData.discription }</p>
             <div className='price'>₹ {singleData.price} only</div>
